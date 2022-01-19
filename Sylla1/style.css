@@ -1,9 +1,9 @@
 .table{
     page-break-after: auto;
-page-break-after: always;
-page-break-after: avoid;
-page-break-after: left;
-page-break-after: right;
-page-break-after: recto;
-page-break-after: verso;
+    page-break-after: always;
+    page-break-after: avoid;
+    page-break-after: left;
+    page-break-after: right;
+    page-break-after: recto;
+    page-break-after: verso;
 }
