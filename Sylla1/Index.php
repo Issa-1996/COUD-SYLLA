@@ -13,11 +13,7 @@
         <div class="row">
             <section class="col-12 text-center">
                 <!--<h1>Etat des retenues sur salaire</h1>-->
-                <?php
-                            for($i=1; $i<=5; $i++){
-                        ?>
                 <table class="table" border="1">
-                    <?php  echo "Page ".$i; ?>
                     <thead>
                         <th>ID</th>
                         <th>Rubrique1</th>
@@ -25,83 +21,26 @@
                         <th>Montant</th>
                     </thead>
                     <tbody>
+                    <?php
+                    $j=0;
+                            for($i=1; $i<=50; $i++){
+                                $j++;
+                        ?>
                         <tr>
-                            <td>test1</td>
+                            <td> <?php echo $i; ?></td>
                             <td>test2</td>
                             <td>test3</td>
                             <td>Test5</td>
                         </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
+                        <?php 
+                         if($j==28){
+                            break;
+                        }
+                            }
+                           
+                        ?>                        
                 </tbody>
                 </table>
-                <?php 
-                    }
-                ?>
             </section>
         </div>
     </main>

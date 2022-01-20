@@ -7,3 +7,28 @@
     page-break-after: recto;
     page-break-after: verso;
 }
+#content {
+    display: table;
+}
+
+#pageFooter {
+    display: table-footer-group;
+    size: 20em;
+}
+
+#pageFooter:after {
+    counter-increment: page;
+    content: counter(page) "of" counter(pages);
+}
+
+.page{
+    content: "page: ";
+    }
+    #page1{
+    content: "1";
+    }
+    #page2{
+    content: "2";
+    }
+    #page3{
+    content: "3";
