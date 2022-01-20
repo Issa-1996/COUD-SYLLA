@@ -12,38 +12,40 @@
 <main class="container" style="text-align:center;">
         <div class="row">
             <section class="col-12 text-center">
-                <!--<h1>Etat des retenues sur salaire</h1>-->
-                <table class="table" border="1">
-                    <thead>
-                        <th>ID</th>
-                        <th>Rubrique1</th>
-                        <th>Rubrique2</th>
-                        <th>Montant</th>
-                    </thead>
-                    <tbody>
-                    <?php
-                    $j=0;
-                            for($i=1; $i<=50; $i++){
-                                $j++;
+                <h1>Etat des retenues sur salaire</h1>
+                <?php
+                    $k=1;
+                    for($j=1; $j<100; $j++){
+                        echo "Page".$k;
                         ?>
-                        <tr>
-                            <td> <?php echo $i; ?></td>
-                            <td>test2</td>
-                            <td>test3</td>
-                            <td>Test5</td>
-                        </tr>
+                        <table class="table" border="1">
+                            <thead>
+                                <th>ID</th>
+                                <th>Rubrique1</th>
+                                <th>Rubrique2</th>
+                                <th>Montant</th>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    for($i=1; $i<30; $i++){
+                                        ?>
+                                        <tr>
+                                            <td> <?php echo $i; ?></td>
+                                            <td>test2</td>
+                                            <td>test3</td>
+                                            <td>Test5</td>
+                                        </tr>
+                                        <?php 
+                                    }
+                                ?>                        
+                            </tbody>
+                        </table>
                         <?php 
-                         if($j==28){
-                            break;
-                        }
-                            }
-                           
-                        ?>                        
-                </tbody>
-                </table>
+                        $k++;
+                    }
+                ?> 
             </section>
         </div>
     </main>
-    
 </body>
 </html>
