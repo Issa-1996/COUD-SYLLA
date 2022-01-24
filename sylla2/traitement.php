@@ -4,5 +4,5 @@ header('Content-disposition: attachment; filename=sylla.xls');
 //Fix for crappy IE bug in download.
 header("Pragma: ");
 header("Cache-Control: ");
-echo $_REQUEST['datatodisplay'];
+include("index.php");
 ?>
