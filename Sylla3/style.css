@@ -1,0 +1,33 @@
+#watermark {
+    color: #d0d0d0;
+    font-size: 50pt;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    position: absolute;
+    top: 30%;
+    margin: 0;
+    z-index: -1;
+    width: 50%;
+}
+#watermark img{
+    opacity: 0.4;
+}
+.tables{
+    text-align: center;
+    width: 100%;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+ }
+ .text-center{
+     width: 30%;
+     margin-left: 35%;
+     margin-bottom: 2%;
+     margin-top: 1%;
+ }
+ .text-center img{
+    width: 100%;
+}
